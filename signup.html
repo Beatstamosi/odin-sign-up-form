@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Trees</title>
     <link rel="stylesheet" href="static/styles.css">
+    <script src="static/password.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -17,12 +18,46 @@
         <div class="right-column">
             <h2>Do you love Trees as much as we do?</h2>
             <p>Are you ready to learn everything there is to know about them?
-                Are you ready to share your deepest dreams about trees with likeminded people?
+                <br>Are you ready to share your deepest dreams about trees with likeminded people?
             </p>
             <p>You know <em>you</em> want to. Let's go!</p>
             <form action="">
                 <div class="form-background">
-                    <p>Start your journey here</p>
+                    <h3>Start your journey here</h3>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="first-name">First Name*</label>
+                            <input type="text" name="first-name" id="last-name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="last-name">Last Name*</label>
+                            <input type="text" name="last-name" id="last-name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="email">E-mail*</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" name="phone" id="phone">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="password">Password*</label>
+                            <input type="password" name="password" id="password" required>
+                            <span id="password-check"></span>
+                        </div>
+                        <div class="form-field">
+                            <label for="confirm-password">Confirm Password*</label>
+                            <input type="password" name="confirm-password" id="confirm-password" required>
+                        </div>
+                    </div>
+
                 </div>
                 <button>Create Account</button>
             </form>
