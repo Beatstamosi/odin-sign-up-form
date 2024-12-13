@@ -18,6 +18,8 @@ function checkPassword() {
 function resetErrorMessage() {
     if (password.value === "" && confirmPassword.value === "") {
         messageSpan.classList.remove("password-error");
+        password.style.borderColor = "red";
+        confirmPassword.style.borderColor = "red";
     } else {
         checkPassword();
     }
